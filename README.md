@@ -11,13 +11,13 @@ A public author website and a complete digital edition of Neha Kharel's debut no
 
 ## Run
 
-Serve `public/` with any static web server. No build or runtime dependencies are needed in production.
+Serve `dist/` with any static web server. No build or runtime dependencies are needed in production.
 
-The `.openai/hosting.json` manifest connects this checkout to its ChatGPT Sites deployment. The public directory is the deployment artifact.
+The `.openai/hosting.json` manifest connects this checkout to its ChatGPT Sites deployment. The dist directory is the deployment artifact.
 
 ## Manuscript and pagination
 
-`public/manuscript.json` contains the extracted prose, including Word text boxes. `public/pages.json` contains the digital pagination. Every word is retained after whitespace normalization. The web edition is newly typeset, so its page numbers differ from the print edition. Chapter labels follow the supplied manuscript, including its second "Chapter 3" label. The original document also lacks an explicit body heading for the earlier Chapter 3; its prose is included in order.
+`dist/manuscript.json` contains the extracted prose, including Word text boxes. `dist/pages.json` contains the digital pagination. Every word is retained after whitespace normalization. The web edition is newly typeset, so its page numbers differ from the print edition. Chapter labels follow the supplied manuscript, including its second "Chapter 3" label. The original document also lacks an explicit body heading for the earlier Chapter 3; its prose is included in order.
 
 To re-extract from an authorized DOCX, install Python `python-docx` and run:
 
@@ -39,4 +39,4 @@ Verification covers complete-text integrity, page content bounds, desktop and mo
 
 The novel and title-page artwork are © Neha Kharel. All rights reserved. Public reading is enabled at the site owner's request; this repository does not grant republication rights.
 
-StPageFlip's MIT license is in `public/vendor/page-flip.LICENSE`. Font redistribution notices are in `public/assets/fonts-LICENSE.txt`.
+StPageFlip's MIT license is in `dist/vendor/page-flip.LICENSE`. Font redistribution notices are in `dist/assets/fonts-LICENSE.txt`.
